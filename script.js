@@ -6,7 +6,7 @@ const progressBar = document.querySelector('.progress-bar');
 const mainContent = document.querySelector('.main-container');
 
 // Hide main content initially
-gsap.set(mainContent, { opacity: 0 });
+gsap.set(mainContent, { autoAlpha: 0 });
 
 const preloaderTimeline = gsap.timeline();
 
@@ -25,28 +25,28 @@ function animateHeroSection() {
     const heroTimeline = gsap.timeline();
     heroTimeline
         .from(".hero-headline", {
-            opacity: 0,
+            autoAlpha: 0,
             y: 50,
             filter: "blur(10px)",
             duration: 1.5,
             ease: "power2.out"
         }, "-=0.5")
         .from(".hero-subtitle", {
-            opacity: 0,
+            autoAlpha: 0,
             y: 30,
             filter: "blur(5px)",
             duration: 1,
             ease: "power2.out"
         }, "-=1")
         .from(".hero-cta .cta-button", {
-            opacity: 0,
+            autoAlpha: 0,
             y: 20,
             stagger: 0.2,
             duration: 0.8,
             ease: "power2.out"
         }, "-=0.8")
         .from(".spline-container", {
-            opacity: 0,
+            autoAlpha: 0,
             x: 100,
             duration: 2,
             ease: "power2.out"
@@ -61,7 +61,7 @@ preloaderTimeline
         ease: 'power2.out'
     })
     .to(preloader, {
-        opacity: 0,
+        autoAlpha: 0,
         scale: 0.9,
         duration: 1,
         ease: 'power2.inOut',
@@ -69,7 +69,7 @@ preloaderTimeline
             preloader.style.display = 'none';
             // Reveal the main content
             gsap.to(mainContent, {
-                opacity: 1,
+                autoAlpha: 1,
                 duration: 1,
                 ease: 'power2.out',
                 onComplete: animateHeroSection
@@ -88,7 +88,7 @@ function initScrollTriggers() {
                 end: 'bottom top',
                 toggleActions: 'play none none none'
             },
-            opacity: 0,
+            autoAlpha: 0,
             x: -100,
             duration: 1.5,
             ease: 'power3.out'
@@ -100,7 +100,7 @@ function initScrollTriggers() {
                 start: 'top 70%',
                 toggleActions: 'play none none none'
             },
-            opacity: 0,
+            autoAlpha: 0,
             y: 50,
             filter: "blur(5px)",
             stagger: 0.3,
@@ -114,7 +114,7 @@ function initScrollTriggers() {
                 start: 'top 80%',
                 toggleActions: 'play none none none'
             },
-            opacity: 0,
+            autoAlpha: 0,
             scale: 0.8,
             stagger: 0.2,
             duration: 0.8,
@@ -143,7 +143,7 @@ function initScrollTriggers() {
 
         // Staggered card animation within the horizontal scroll
         gsap.from(showcaseSection.querySelectorAll('.showcase-card'), {
-            opacity: 0,
+            autoAlpha: 0,
             scale: 0.9,
             y: 50,
             stagger: 0.1,
@@ -166,7 +166,7 @@ function initScrollTriggers() {
                 start: 'top 80%',
                 toggleActions: 'play none none none'
             },
-            opacity: 0,
+            autoAlpha: 0,
             y: 60,
             filter: "blur(5px)",
             stagger: 0.3,
@@ -184,7 +184,7 @@ function initScrollTriggers() {
                 start: 'top 80%',
                 toggleActions: 'play none none none'
             },
-            opacity: 0,
+            autoAlpha: 0,
             y: 60,
             scale: 0.95,
             stagger: 0.2,
@@ -202,7 +202,7 @@ function initScrollTriggers() {
                 start: 'top 80%',
                 toggleActions: 'play none none none'
             },
-            opacity: 0,
+            autoAlpha: 0,
             x: -100,
             duration: 1.5,
             ease: 'power3.out'
@@ -218,7 +218,7 @@ function initScrollTriggers() {
                 start: 'top 95%',
                 toggleActions: 'play none none none'
             },
-            opacity: 0,
+            autoAlpha: 0,
             y: 60,
             filter: "blur(10px)",
             duration: 1.5,
@@ -279,7 +279,7 @@ function initUIEventListeners() {
 preloaderTimeline.eventCallback('onComplete', () => {
     preloader.style.display = 'none';
     gsap.to(mainContent, {
-        opacity: 1,
+        autoAlpha: 1,
         duration: 1,
         ease: 'power2.out',
         onComplete: () => {
