@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum FX - AI-Powered Forex Bots</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-logo">Quantum FX</div>
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-container" data-scroll-container>
+        <!-- Header -->
+        <header class="header" data-scroll-section>
+            <nav class="navbar">
+                <a href="#" class="logo">Quantum FX</a>
+                <div class="nav-links">
+                    <a href="#home" data-scroll-to>Home</a>
+                    <a href="#about" data-scroll-to>About</a>
+                    <a href="#bots" data-scroll-to>Bots</a>
+                    <a href="#contact" data-scroll-to>Contact</a>
+                </div>
+                <button class="hamburger">
+                    <i class="ph-light ph-list"></i>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" data-scroll-section>
+            <div class="hero-content">
+                <h1 class="hero-headline" data-scroll data-scroll-speed="1.2">Quantum FX – AI-Powered Forex Bots</h1>
+                <p class="hero-subtitle" data-scroll data-scroll-speed="1.1">Trade Smarter. Sleep Better.</p>
+                <div class="hero-cta">
+                    <button class="cta-button primary">Get Started</button>
+                    <button class="cta-button secondary">View Bots</button>
+                </div>
+            </div>
+            <div class="spline-container" data-scroll data-scroll-speed="0.8">
+                <!-- Spline 3D model will be loaded here -->
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.67/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/YOUR-SPLINE-SCENE/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="glow-orb-container">
+                <div class="glow-orb" data-scroll data-scroll-speed="3"></div>
+                <div class="glow-orb" data-scroll data-scroll-speed="-2"></div>
+                <div class="glow-orb" data-scroll data-scroll-speed="1"></div>
+            </div>
+        </section>
+
+        <!-- About Bots Section -->
+        <section id="about" class="about-section" data-scroll-section>
+            <div class="about-image-container" data-scroll data-scroll-speed="1.5">
+                <div class="glowing-container">
+                     <img src="assets/bot-image.png" alt="AI Trading Bot">
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 data-scroll data-scroll-speed="0.8">Our AI bots are trained on years of Forex market data</h2>
+                <p>We leverage cutting-edge machine learning to analyze market trends, execute trades, and manage risk 24/7.</p>
+                <div class="features-grid">
+                    <div class="feature-item"><i class="ph-light ph-robot"></i> Auto Buy/Sell</div>
+                    <div class="feature-item"><i class="ph-light ph-shield-check"></i> Stop-Loss</div>
+                    <div class="feature-item"><i class="ph-light ph-chart-line-up"></i> Risk Mgmt</div>
+                    <div class="feature-item"><i class="ph-light ph-timer"></i> 24/7 Trading</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bots Showcase Section -->
+        <section id="bots" class="showcase-section" data-scroll-section>
+            <h2>Our Bots</h2>
+            <div class="showcase-pinner">
+                <div class="showcase-container">
+                    <div class="showcase-card">
+                        <h3>QuantumLeap Bot</h3>
+                        <p>Strategy: Scalping</p><p>Risk: Low</p>
+                        <div class="platforms"><i class="ph-bold ph-meta-logo"></i><i class="ph-bold ph-currency-btc"></i></div>
+                        <button class="cta-button">View Details</button>
+                    </div>
+                    <div class="showcase-card"><h3>Momentum Bot</h3><p>Strategy: Trend</p><p>Risk: Medium</p><div class="platforms"><i class="ph-bold ph-meta-logo"></i></div><button class="cta-button">View Details</button></div>
+                    <div class="showcase-card"><h3>Arbitrage Bot</h3><p>Strategy: HFT</p><p>Risk: Low</p><div class="platforms"><i class="ph-bold ph-currency-eth"></i><i class="ph-bold ph-currency-btc"></i></div><button class="cta-button">View Details</button></div>
+                    <div class="showcase-card"><h3>Volatility Bot</h3><p>Strategy: Breakout</p><p>Risk: High</p><div class="platforms"><i class="ph-bold ph-meta-logo"></i></div><button class="cta-button">View Details</button></div>
+                    <div class="showcase-card"><h3>Grid Bot</h3><p>Strategy: Grid</p><p>Risk: Medium</p><div class="platforms"><i class="ph-bold ph-currency-btc"></i></div><button class="cta-button">View Details</button></div>
+                    <div class="showcase-card"><h3>AI Fusion Bot</h3><p>Strategy: Hybrid</p><p>Risk: Adaptive</p><div class="platforms"><i class="ph-bold ph-meta-logo"></i><i class="ph-bold ph-currency-eth"></i></div><button class="cta-button">View Details</button></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section" data-scroll-section>
+             <h2 data-scroll data-scroll-speed="1">What Our Traders Say</h2>
+             <div class="testimonial-cards">
+                <div class="testimonial-card" data-scroll data-scroll-speed="1.2">
+                    <p>"The QuantumLeap bot has been a game-changer for my portfolio. Consistent profits with minimal effort."</p>
+                    <span>- Alex T.</span>
+                    <div class="performance-chart">
+                        <img src="assets/chart-placeholder.png" alt="Performance Chart">
+                    </div>
+                </div>
+                <div class="testimonial-card" data-scroll data-scroll-speed="1.5">
+                    <p>"Finally, a bot that understands risk. The built-in stop-loss has saved me more than once."</p>
+                    <span>- Sarah J.</span>
+                     <div class="performance-chart">
+                        <img src="assets/chart-placeholder-2.png" alt="Performance Chart">
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section" data-scroll-section>
+            <h2>Pricing Plans</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter Bot</h3>
+                    <p class="price">$199</p>
+                    <ul><li>1 Bot License</li><li>Basic Strategies</li><li>Email Support</li></ul>
+                    <button class="cta-button">Purchase</button>
+                </div>
+                <div class="pricing-card featured" data-scroll data-scroll-speed="1.2">
+                    <h3>Pro Bot</h3>
+                    <p class="price">$499</p>
+                    <ul><li>3 Bot Licenses</li><li>Advanced Strategies</li><li>Priority Support</li></ul>
+                    <button class="cta-button">Purchase</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Elite AI Bundle</h3>
+                    <p class="price">$999</p>
+                    <ul><li>Unlimited Licenses</li><li>All Strategies + AI</li><li>Dedicated Support</li></ul>
+                    <button class="cta-button">Purchase</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" data-scroll-section>
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+                <div class="payment-info">
+                    <h3>Payment Methods</h3>
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <h4>UPI</h4>
+                            <img src="assets/upi-qr-code.png" alt="UPI QR Code" class="qr-code">
+                        </div>
+                        <div class="payment-option">
+                            <h4>Crypto</h4>
+                            <p>BTC: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
+                            <p>ETH: 0x1234567890123456789012345678901234567890</p>
+                            <p>USDT: TABCDEFGHIJKLMNOPQRSTUVWXYZ1234567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" data-scroll-section>
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="#home" data-scroll-to>Home</a>
+                    <a href="#about" data-scroll-to>About</a>
+                    <a href="#bots" data-scroll-to>Bots</a>
+                    <a href="#contact" data-scroll-to>Contact</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="ph-light ph-telegram-logo"></i></a>
+                    <a href="#"><i class="ph-light ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph-light ph-youtube-logo"></i></a>
+                </div>
+                <p>&copy; 2024 Quantum FX. All Rights Reserved.</p>
+            </div>
+             <div class="glow-orb-container">
+                <div class="glow-orb" data-scroll data-scroll-speed="-1"></div>
+                <div class="glow-orb" data-scroll data-scroll-speed="1"></div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
